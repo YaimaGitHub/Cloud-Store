@@ -15,6 +15,7 @@ const Hero = () => {
           </h1>
           <p className="text-xl max-md:text-lg">
           Creamos su sitio web de comercio electrónico.
+          Somos más que un sitio web. Somos un aliado.
           </p>
           <div className="space-x-4 mt-10">
             <Button>

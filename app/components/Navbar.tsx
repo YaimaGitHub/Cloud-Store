@@ -16,7 +16,7 @@ const Navbar = () => {
       >
         <div>
           <Link href="/">
-            FakeStore<strong className="text-pink-500">API</strong>
+            YeroStore<strong className="text-pink-500"></strong>
           </Link>
         </div>
         <div className="flex items-center gap-6">
@@ -24,16 +24,16 @@ const Navbar = () => {
             <li className={cn("opacity-60 hover:opacity-100 transition-opacity",
             pathname === '/' && "opacity-100"
             )}>
-              <Link href="/">Home</Link>
+              <Link href="/">Inicio</Link>
             </li>
             <li className={cn("opacity-60 hover:opacity-100 transition-opacity",
             pathname === '/docs' && "opacity-100"
             )}>
-              <Link href="/docs">Docs</Link>
+              <Link href="/docs">Documentos</Link>
             </li>
             <li className="opacity-60 hover:opacity-100 transition-opacity group">
               <Link href="https://github.com/vishal-gg/fakeStoreApi" target="_blank" className="flex items-center">
-                GitHub <FiArrowUpRight className="text-xl group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-transform" />
+                YeroStore <AnimationEffect className="text-xl group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-transform" />
               </Link>
             </li>
           </ul>

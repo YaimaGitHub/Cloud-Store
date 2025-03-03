@@ -16,7 +16,7 @@ const Navbar = () => {
       >
         <div>
           <Link href="/">
-            YeroStore<strong className="text-pink-500"></strong>
+            YeroStore<strong className="text-pink-500">API</strong>
           </Link>
         </div>
         <div className="flex items-center gap-6">

@@ -14,8 +14,7 @@ const Hero = () => {
             Prototyping Made Easy
           </h1>
           <p className="text-xl max-md:text-lg">
-            Build and test your e-commerce website or app seamlessly with our
-            free and reliable Fake Store API.
+          Creamos su sitio web de comercio electrónico.
           </p>
           <div className="space-x-4 mt-10">
             <Button>

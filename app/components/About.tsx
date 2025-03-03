@@ -22,7 +22,7 @@ const About = () => {
         <Link href="https://shop-vert-eight.vercel.app/" target="_blank">
           <div className="w-[min(768px,100%-4rem)] aspect-video relative mx-auto shadow-md dark:shadow-white/20 group overflow-hidden rounded-xl hover:rounded-3xl transition-all hover:shadow-xl">
             <Image
-              src="/sd.jpg"
+              src="https://imgur.com/a/afPtkYN"
               className="h-full w-full object-contain group-hover:scale-[1.02] transition-transform"
               alt="Illustration"
               priority

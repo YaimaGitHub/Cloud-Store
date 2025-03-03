@@ -8,9 +8,9 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YeroStore - Creamos su sitio web de comercio electrónico.",
-  description: "YeroStore is a free products API for testing and prototyping. It's a fake API with products that include images, prices, descriptions, and more. we also provide data for users where you can get all the users data and single user data.",
-  keywords: "YeroStore, fake store api, free products api, fake api, fakestore api products fakeusersapi, fake users api, fake users data, fake users",
+  title: "Yero Store'S - Creamos su sitio web de comercio electrónico.",
+  description: "Yero Store'S is a free products API for testing and prototyping. It's a fake API with products that include images, prices, descriptions, and more. we also provide data for users where you can get all the users data and single user data.",
+  keywords: "Yero Store'S, fake store api, free products api, fake api, fakestore api products fakeusersapi, fake users api, fake users data, fake users",
   
 };
 

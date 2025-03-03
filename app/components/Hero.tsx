@@ -18,11 +18,13 @@ const Hero = () => {
           </p>
           <div className="space-x-4 mt-10">
             <Button>
-              <Link
-                href="https://github.com/vishal-gg/fakeStoreApi"
+            <Link
+            href="tel:917387084384" > Call +91-7387084384
+                           
+                
                 target="_blank"
-              >
-                Código Fuente
+              
+                (53) 5469-0878
               </Link>
             </Button>
             <Button variant="outline">

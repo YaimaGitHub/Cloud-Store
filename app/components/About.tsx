@@ -17,7 +17,7 @@ const About = () => {
       </div>
 
       <div className="mt-16">
-        <Link href="https://snapstore.vercel.app" target="_blank">
+        <Link href="https://shop-vert-eight.vercel.app/" target="_blank">
           <div className="w-[min(768px,100%-4rem)] aspect-video relative mx-auto shadow-md dark:shadow-white/20 group overflow-hidden rounded-xl hover:rounded-3xl transition-all hover:shadow-xl">
             <Image
               src={showcase}

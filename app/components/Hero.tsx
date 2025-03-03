@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="w-[min(1200px,100%-4rem)] min-h-screen mx-auto flex justify-center items-center">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-6xl max-md:text-5xl font-bold mb-5">
-            <span className="whitespace-nowrap text-pink-500">E-commerce</span>{" "}
-            Prototyping Made Easy
+            <span className="whitespace-nowrap text-pink-500">El Comercio</span>{" "}
+            con Yero es más fácil
           </h1>
           <p className="text-xl max-md:text-lg">
           Creamos su sitio web de comercio electrónico.

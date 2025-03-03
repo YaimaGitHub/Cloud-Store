@@ -18,19 +18,35 @@ const Hero = () => {
           </p>
           <div className="space-x-4 mt-10">
             <Button>
-            <Link
-            href="tel:917387084384" > Call +91-7387084384
-                           
-                
+              <Link
+                href="https://github.com/vishal-gg/fakeStoreApi"
                 target="_blank"
-              
-                (53) 5469-0878
+              >
+                Source Code
               </Link>
             </Button>
             <Button variant="outline">
               <Link href="/docs">Read Docs</Link>
             </Button>
           </div>
+
+          
+
+          </div>
+                <a href="https://www.instagram.com/" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-05s">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-05s">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5355135487" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3" >
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+
+
+
         </div>
         <div className="">
           <div className="relative w-[500px] max-lg:hidden">

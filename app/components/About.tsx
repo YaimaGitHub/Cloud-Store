@@ -13,8 +13,8 @@ const About = () => {
         Nuestra cultura corporativa se basa en un principio: Fundado en el Compromiso. Estamos orgullosos 
         de los productos que construimos con la ayuda de la experiencia de nuestros empleados, para garantizar 
         fiabilidad y la compatibilidad de los sitios web's. 
-        ✨Nuestros productos hacen posible el mundo de hoy y acercan el mundo del mañana.✨
-                         ✨ Estámos contigo a cada paso del camino✨
+        Nuestros productos hacen posible el mundo de hoy y acercan el mundo del mañana.
+        Estámos contigo a cada paso del camino
         </p>
       </div>
 
@@ -22,7 +22,7 @@ const About = () => {
         <Link href="https://shop-vert-eight.vercel.app/" target="_blank">
           <div className="w-[min(768px,100%-4rem)] aspect-video relative mx-auto shadow-md dark:shadow-white/20 group overflow-hidden rounded-xl hover:rounded-3xl transition-all hover:shadow-xl">
             <Image
-              src="/profile.png"
+              src="/sd.jpg"
               className="h-full w-full object-contain group-hover:scale-[1.02] transition-transform"
               alt="Illustration"
               priority

@@ -10,19 +10,19 @@ export const getFormValidations = () => {
     name: {
       required: {
         value: true,
-        message: "Name is required",
+        message: "El nombre es obligatorio",
       },
       maxLength: {
         value: 20,
-        message: "Max Length 20 chars",
+        message: "Longitud máxima 20 caracteres",
       },
       minLength: {
         value: 5,
-        message: "Min Length 5 chars",
+        message: "Longitud mínima 5 caracteres",
       },
       pattern: {
         value: /^[A-Za-z ]{5,20}$/,
-        message: "Icorrect Name",
+        message: "Nombre incorrecto",
       },
     },
 
@@ -30,59 +30,60 @@ export const getFormValidations = () => {
     phone: {
       required: {
         value: true,
-        message: "Phone is required",
+        message: "Se requiere teléfono",
       },
       maxLength: {
         value: 20,
-        message: "Max Length 20 chars",
+        message: "Longitud máxima 20 caracteres",
       },
       minLength: {
         value: 5,
-        message: "Min Length 5 chars",
+        message: "Longitud mínima 5 caracteres",
       },
       pattern: {
         value: /^[0-9]{5,20}$/,
-        message: "Icorrect Phone",
+        message: "Teléfono incorrecto",
       },
     },
     //address
     address: {
       required: {
         value: true,
-        message: "Address is required",
+        message: "Se requiere dirección",
       },
       maxLength: {
         value: 20,
-        message: "Max Length 20 chars",
+        message: "Longitud máxima 20 caracteres",
       },
       minLength: {
         value: 5,
-        message: "Min Length 5 chars",
+        message: "Longitud mínima 5 caracteres",
       },
       pattern: {
         value: /^[0-9a-zA-Z ]{5,20}$/,
-        message: "Icorrect Address",
+        message: "Dirección incorrecta",
       },
     },
     //city
     city: {
       required: {
         value: true,
-        message: "City is required",
+        message: "Se requiere la provincia",
       },
     },
     //schedule
     schedule: {
       required: {
         value: true,
-        message: "Schedule is required",
+        message: "Se requiere horario",
       },
     },
     //extra comment
+    /* Esto es un comentario adicional (controlar la cantidad de caracteres escritos por el usuario maximo 25 por defecto) */
     comment: {
       maxLength: {
-        value: 25,
-        message: "Max Length 25 chars",
+        value: 40,
+        message: "Longitud máxima 40 caracteres",
       },
     },
   };
@@ -106,7 +107,7 @@ export function getWspUrl(orderData) {
 
   const WSP_URL = `https://api.whatsapp.com/send/?phone=${N}&text=%2A${"Order"}%3A%2A%20${ID}%0A%0A%2A${"Cliente"}%3A%2A%20${name}%0A%0A%2A${"Phone"}%3A%2A%20${phone}%0A%0A%2A${
     withDelivery ? "Dirección" + "%3A%2A%20" + address + " %0A%0A%2A" : ""
-  }${withDelivery ? "Barrio o Domicilio" + "%3A%2A%20" + city + "%0A%0A%2A" : ""}${
+  }${withDelivery ? "Domicilio donde vive" + "%3A%2A%20" + city + "%0A%0A%2A" : ""}${
     withDelivery ? "Hora Programada" + "%3A%2A%20" + schedule + "%0A%0A%2A" : ""
   }${comment ? "Comentario Adicional" + "%3A%2A%20" + comment + "%0A%0A%2A" : ""}${"Lista de Artículos"}%3A%2A${cartListforUrl}%0A%0A%2A${
     withDelivery ? "Sub Total" + "%3A%2A%20$" + subTotal + " %0A%0A%2A" : ""

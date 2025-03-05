@@ -42,10 +42,13 @@ export const withDelivery = atom({
   default: true,
 });
 
+
+/* aqui se controla el costo del domicilio */
 export const deliveryFee = atom({
   key: "deliveryFee",
-  default: 5,
+  default: 500,
 });
+
 
 export const formState = atom({
   key: "formState",

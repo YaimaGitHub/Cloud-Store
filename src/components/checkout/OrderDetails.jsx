@@ -27,7 +27,7 @@ function OrderDetails() {
         </Flex>
 
         <Flex w="100%" justify="space-between" mb="3">
-          <Text>Entrega:</Text>
+          <Text>Tarifa de entrega a domicilio ($500MN):</Text>
           <Text>$ {withDelivery ? shippingCost : "0"}</Text>
         </Flex>
 

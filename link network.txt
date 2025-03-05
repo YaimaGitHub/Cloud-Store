@@ -1,0 +1,15 @@
+Pasos para darle solución al error: Next.js 13 requires React 18.2.0 to be installed
+
+How to install react dom 18?
+Install the latest version:
+0-npm run build
+1-npm install react@18 react-dom@18 (escribir esto)
+2-npm fund
+3-npm run dev
+
+
+
+
+- Local:        http://localhost:3000
+   - Network:      http://10.48.29.53:3000
+

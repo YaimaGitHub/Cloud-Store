@@ -18,7 +18,7 @@ export default function ItemCard({ item }) {
     if (counter === 1 && isAdded === "noAdded") {
       toast({
         position: "bottom-left",
-        title: "Item Added to Cart.",
+        title: "Artículo agregado al carrito.",
         status: "success",
         duration: 1500,
       });
@@ -26,7 +26,7 @@ export default function ItemCard({ item }) {
     } else if (counter === 0 && isAdded === "added") {
       toast({
         position: "bottom-left",
-        title: "Item Removed to Cart.",
+        title: "Artículo eliminado del carrito.",
         status: "error",
         duration: 1500,
       });
@@ -54,7 +54,7 @@ export default function ItemCard({ item }) {
       >
         {offerPrice && (
           <Badge size="" variant="solid" variantColor="red" position="absolute" px="2" top="10px" right="10px">
-            SALE
+            Promoción
           </Badge>
         )}
 

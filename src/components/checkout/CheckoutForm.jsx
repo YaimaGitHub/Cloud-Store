@@ -37,11 +37,11 @@ function CheckoutForm() {
     <>
       <Box w={["100%", "80%", "46%", "40%"]} height="max-content" bg="white" p="4" mx="2" order={["1", "1", "0"]} mt={["6", "6", "0"]}>
         <Heading as="h3" size="md" textAlign="center">
-          Your Options
+          Tus Opciones
         </Heading>
         <Flex as="form" p="2" direction="column" onSubmit={handleSubmit(onSubmit)}>
           <Flex justify="center" align="center" mt="6">
-            <FormLabel htmlFor="delivery">With Delivery?</FormLabel>
+            <FormLabel htmlFor="delivery">¿Con entrega a Domicilio?</FormLabel>
             <Switch id="delivery" color="teal" defaultIsChecked onChange={() => setDelivery(!delivery)} />
           </Flex>
 
@@ -50,7 +50,7 @@ function CheckoutForm() {
             <Input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder="Su nombre"
               variant="filled"
               ref={register(validations.name)}
               isInvalid={errors.name ? true : false}
@@ -67,7 +67,7 @@ function CheckoutForm() {
             <Input
               type="phone"
               name="phone"
-              placeholder="Phone Number"
+              placeholder="Número de teléfono"
               variant="filled"
               ref={register(validations.phone)}
               isInvalid={errors.phone ? true : false}
@@ -86,7 +86,7 @@ function CheckoutForm() {
                 <Input
                   type="text"
                   name="address"
-                  placeholder="Your Address"
+                  placeholder="Tu dirección"
                   variant="filled"
                   ref={register(validations.address)}
                   isInvalid={errors.address ? true : false}
@@ -102,13 +102,13 @@ function CheckoutForm() {
                 <InputLeftElement children={<PseudoBox as={BiMapAlt} size="24px" color="bluex.400" />} />
                 <Select
                   variant="filled"
-                  placeholder="-- Chose a City --"
+                  placeholder="-- Elige la provincia donde se le pueda localizar --"
                   pl="40px"
                   name="city"
                   ref={register(validations.city)}
                   isInvalid={errors.city ? true : false}
                 >
-                  <option value="option1">City 1</option>
+                  <option value="option1">Santiago de Cuba</option>
                   <option value="option2">City 2</option>
                   <option value="option3">City 3</option>
                   <option value="option4">City 4</option>
@@ -124,7 +124,7 @@ function CheckoutForm() {
                 <InputLeftElement children={<PseudoBox as={BiTime} size="24px" color="bluex.400" />} />
                 <Select
                   variant="filled"
-                  placeholder="-- Chose a Schedule --"
+                  placeholder="-- Elija un horario --"
                   pl="40px"
                   name="schedule"
                   ref={register(validations.schedule)}
@@ -149,7 +149,7 @@ function CheckoutForm() {
             <Input
               type="text"
               name="comment"
-              placeholder="Extra Comment"
+              placeholder="Comentario adicional"
               variant="filled"
               ref={register(validations.comment)}
               isInvalid={errors.comment ? true : false}
@@ -162,7 +162,7 @@ function CheckoutForm() {
           )}
 
           <Button type="submit" w="100%" variantColor="green" size="lg" mt="6">
-            CONFIRM
+          CONFIRMAR
           </Button>
         </Flex>
       </Box>

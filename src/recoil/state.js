@@ -9,12 +9,12 @@ export const selectedCategory = atom({
 
 export const orderOptions = atom({
   key: "orderOptions",
-  default: ["Ascending", "Descending", "Min Price", "Max Price"],
+  default: ["Ascendente", "Descendente", "Precio mínimo", "Precio máximo"],
 });
 
 export const sortMode = atom({
   key: "sortMode",
-  default: "Ascending",
+  default: "Ascendente",
 });
 
 export const searchValue = atom({
@@ -124,7 +124,7 @@ export const resetState = selector({
   key: "resetState",
   set: ({ get, set }) => {
     set(selectedCategory, "all");
-    set(sortMode, "Ascending");
+    set(sortMode, "Ascendente");
     set(withDelivery, true);
     set(cart, {});
     set(cartLength, 0);

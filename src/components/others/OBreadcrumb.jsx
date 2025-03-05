@@ -12,7 +12,7 @@ export default function OBreadcrumb() {
       separator={catSelected !== "all" ? <Icon color="bluex.400" name="chevron-right" /> : null}
     >
       <BreadcrumbItem isCurrentPage={catSelected === "all"}>
-        <BreadcrumbLink onClick={() => setCat("all")}>All Items</BreadcrumbLink>
+        <BreadcrumbLink onClick={() => setCat("all")}>Todos los Artículos:</BreadcrumbLink>
       </BreadcrumbItem>
 
       {catSelected !== "all" ? (

@@ -32,12 +32,12 @@ function ConfirmAlertModal({ showModal, setModal }) {
       <AlertDialog onClose={onClose} isOpen={showModal}>
         <AlertDialogOverlay />
         <AlertDialogContent>
-          <AlertDialogHeader>Confim Order?</AlertDialogHeader>
+          <AlertDialogHeader>¿Confirmar Pedido?</AlertDialogHeader>
           <AlertDialogCloseButton />
-          <AlertDialogBody>You will be redirected to a whatsapp tab for send a message with order details</AlertDialogBody>
+          <AlertDialogBody>Serás redirigido a una pestaña de WhatsApp para enviar un mensaje con los detalles del pedido.</AlertDialogBody>
           <AlertDialogFooter>
             <Button variantColor="teal" ml={3} onClick={onConfirm}>
-              Yes
+              Si
             </Button>
           </AlertDialogFooter>
         </AlertDialogContent>

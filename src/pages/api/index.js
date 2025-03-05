@@ -2,13 +2,13 @@ import data from "../../data";
 
 const handleSort = (items, sortMode) => {
   switch (sortMode) {
-    case "Ascending":
+    case "Ascendente":
       return items.sort((a, b) => a.title - b.title);
-    case "Descending":
+    case "Descendente":
       return items.sort((a, b) => b.title - a.title);
-    case "Min Price":
+    case "Precio mínimo":
       return items.sort((a, b) => a.price - b.price);
-    case "Max Price":
+    case "Precio máximo":
       return items.sort((a, b) => b.price - a.price);
     default:
       return items;

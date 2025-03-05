@@ -27,7 +27,7 @@ const Checkout = () => {
 
         <Box as="main" py="8">
           <Heading as="h2" size="xl" textAlign="center">
-            CHECKOUT
+          Verificar la Compra
           </Heading>
 
           <Flex w={["100%", "80%", "90%", "80%"]} mx="auto" justify="center" mt="8" wrap="wrap">

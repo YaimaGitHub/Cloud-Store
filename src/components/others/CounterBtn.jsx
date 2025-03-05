@@ -26,7 +26,7 @@ export default function CounterBtn({ type = "default", counter = 0, item }) {
     <>
       {counter < 1 ? (
         <Button variantColor="teal" size="md" w="65%" onClick={() => setCart({ item, n: 1 })}>
-          Add to Cart
+          Añadir al carrito
         </Button>
       ) : (
         <Flex w="65%" bg="gray.200" justify="space-between" align="center" rounded="md" overflow="hidden">

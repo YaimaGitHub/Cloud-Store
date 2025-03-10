@@ -8,11 +8,11 @@ function Footer() {
 
         <Stack isInline>
         <a href="https://www.instagram.com/" class="btn btn-sm btn-white btn-social mr-3">
-            <Icon name="link" mx="2" />
+            <Icon name="phone" mx="2" />
             <i class="fab fa-instagram"></i>
           </a>
           <a href="https://www.facebook.com/" target="_blank" class="btn btn-sm btn-white btn-social mr-3">
-            <Icon name="link" mx="2" />
+            <Icon name="email" mx="2" />
           </a>
           <a href="https://api.whatsapp.com/send?phone=5354690878" target="_blank" class="btn btn-sm btn-white btn-social mr-3" >
             <Icon name="link" mx="2" />

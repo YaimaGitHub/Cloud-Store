@@ -6,7 +6,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "apples.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "2",
@@ -42,7 +42,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "berry.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "6",
@@ -51,7 +51,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "berry2.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "7",
@@ -87,7 +87,7 @@ export default [
     offerPrice: 6.88,
     stock: 12,
     img: "cherry.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "22",
@@ -114,7 +114,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "clemen.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "55",
@@ -150,7 +150,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "dates.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "99",
@@ -186,7 +186,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "lemon.jpg",
-    category: "fuits",
+    category: "Electrodomésticos",
   },
   {
     id: "333",
@@ -195,7 +195,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "lime.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "444",
@@ -204,7 +204,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "mango.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "555",
@@ -249,7 +249,7 @@ export default [
     offerPrice: null,
     stock: 12,
     img: "pears.jpg",
-    category: "fruits",
+    category: "Electrodomésticos",
   },
   {
     id: "000",

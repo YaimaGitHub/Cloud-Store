@@ -49,9 +49,9 @@ export default function ItemsGrid() {
       >
         <AlertIcon size="40px" mr={0} />
         <AlertTitle mt={4} mb={1} fontSize="lg">
-          No Items Found!
+        Búsqueda sin resultados
         </AlertTitle>
-        <AlertDescription maxWidth="sm">Lorem ipsum dolor sit amet consectetur adipisicing elit</AlertDescription>
+        <AlertDescription maxWidth="sm">No se encontraron productos según el criterio de búsqueda introducido.</AlertDescription>
       </Alert>
     );
   }

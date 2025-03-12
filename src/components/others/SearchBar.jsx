@@ -42,7 +42,7 @@ export default function SearchBar({ setShowSearch }) {
           rounded="lg"
           border="2px solid black"
         >
-          <Input pl="4rem" type="search" placeholder="Search Product" onChange={handleChange} defaultValue={searchQuery} />
+          <Input pl="4rem" type="search" placeholder="Buscar en la tienda ..." onChange={handleChange} defaultValue={searchQuery} />
           <InputLeftElement w="4rem">
             <button>
               <Box as={BiSearch} size="28px" />

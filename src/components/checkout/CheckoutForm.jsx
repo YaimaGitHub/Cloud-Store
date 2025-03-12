@@ -102,16 +102,20 @@ function CheckoutForm() {
                 <InputLeftElement children={<PseudoBox as={BiMapAlt} size="24px" color="bluex.400" />} />
                 <Select
                   variant="filled"
-                  placeholder="-- Elige la provincia donde se le pueda localizar --"
+                  placeholder="-- Lugar de entrega --"
                   pl="40px"
                   name="city"
                   ref={register(validations.city)}
                   isInvalid={errors.city ? true : false}
                 >
                   <option value="option1">Santiago de Cuba</option>
-                  <option value="option2">City 2</option>
-                  <option value="option3">City 3</option>
-                  <option value="option4">City 4</option>
+                  <option value="option2">Contramaestre</option>
+                  <option value="option3">Mella</option>
+                  <option value="option4">Segundo Frente</option>
+                  <option value="option4">Songo la Maya</option>
+                  <option value="option4">Palma Soriano</option>
+                  <option value="option4">Tercer Frente </option>
+                  <option value="option4">Guama</option>
                 </Select>
               </InputGroup>
               {errors.city && (

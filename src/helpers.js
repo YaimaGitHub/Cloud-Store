@@ -68,7 +68,7 @@ export const getFormValidations = () => {
     city: {
       required: {
         value: true,
-        message: "Se requiere la provincia",
+        message: "Se requiere el lugar de entrega",
       },
     },
     //schedule
@@ -82,8 +82,8 @@ export const getFormValidations = () => {
     /* Esto es un comentario adicional (controlar la cantidad de caracteres escritos por el usuario maximo 25 por defecto) */
     comment: {
       maxLength: {
-        value: 40,
-        message: "Longitud máxima 40 caracteres",
+        value: 30,
+        message: "Longitud máxima 30 caracteres",
       },
     },
   };

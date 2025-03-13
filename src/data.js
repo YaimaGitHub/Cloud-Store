@@ -2,7 +2,7 @@ export default [
   {
     id: "1",
     title: "Apples x lb",
-    price: 2.1,
+    price: 100, 
     offerPrice: null,
     stock: 12,
     img: "apples.jpg",

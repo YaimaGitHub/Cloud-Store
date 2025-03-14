@@ -2,7 +2,7 @@ export default [
   {
     id: "1",
     title: "Apples x lb",
-    price: 100, 
+    price: 2.1,
     offerPrice: null,
     stock: 12,
     img: "apples.jpg",
@@ -19,7 +19,7 @@ export default [
   },
   {
     id: "3",
-    title: "abciquam feugiat beanss",
+    title: "abciquam feugiat beans",
     price: 4.88,
     offerPrice: null,
     stock: 12,

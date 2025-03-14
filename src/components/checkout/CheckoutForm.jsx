@@ -153,7 +153,7 @@ function CheckoutForm() {
             <Input
               type="text"
               name="comment"
-              placeholder="Detalles de la dirección"
+              placeholder="Comentario adicional"
               variant="filled"
               ref={register(validations.comment)}
               isInvalid={errors.comment ? true : false}

@@ -19,7 +19,7 @@ export default [
   },
   {
     id: "3",
-    title: "abciquam feugiat beans",
+    title: "abciquam feugiat beanss",
     price: 4.88,
     offerPrice: null,
     stock: 12,

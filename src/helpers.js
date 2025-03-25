@@ -105,7 +105,7 @@ export function getWspUrl(orderData) {
     });
   }
 
-  const WSP_URL = `https://api.whatsapp.com/send/?phone=${N}&text=%2A${"Order"}%3A%2A%20${ID}%0A%0A%2A${"Cliente"}%3A%2A%20${name}%0A%0A%2A${"Phone"}%3A%2A%20${phone}%0A%0A%2A${
+  const WSP_URL = `https://api.whatsapp.com/send/?phone=${N}&text=%2A${"Número de Orden"}%3A%2A%20${ID}%0A%0A%2A${"Cliente"}%3A%2A%20${name}%0A%0A%2A${"Teléfono"}%3A%2A%20${phone}%0A%0A%2A${
     withDelivery ? "Dirección" + "%3A%2A%20" + address + " %0A%0A%2A" : ""
   }${withDelivery ? "Domicilio donde vive" + "%3A%2A%20" + city + "%0A%0A%2A" : ""}${
     withDelivery ? "Hora Programada" + "%3A%2A%20" + schedule + "%0A%0A%2A" : ""

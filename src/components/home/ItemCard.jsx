@@ -20,7 +20,7 @@ export default function ItemCard({ item }) {
         position: "bottom-left",
         title: "Artículo agregado al carrito.",
         status: "success",
-        duration: 1500,
+        duration: 500,
       });
       setAdded("added");
     } else if (counter === 0 && isAdded === "added") {

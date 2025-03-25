@@ -23,12 +23,12 @@ function OrderDetails() {
       <Flex direction="column" p="2" w="100%">
         <Flex w="100%" justify="space-between" mb="3">
           <Text>Sub Total:</Text>
-          <Text>$ {subTotal}</Text>
+          <Text>$ {subTotal} CUP</Text>
         </Flex>
 
         <Flex w="100%" justify="space-between" mb="3">
-          <Text>Tarifa de entrega ($1500MN):</Text>
-          <Text>$ {withDelivery ? shippingCost : "0"}</Text>
+          <Text>Tarifa de entrega ($500MN):</Text>
+          <Text>$ {withDelivery ? shippingCost : "0"} CUP</Text>
         </Flex>
 
         <Flex w="100%" justify="space-between" mb="3">
@@ -36,7 +36,7 @@ function OrderDetails() {
             Total:
           </Text>
           <Text fontSize="lg" fontWeight="medium">
-            $ {total}
+            $ {total} CUP
           </Text>
         </Flex>
       </Flex>

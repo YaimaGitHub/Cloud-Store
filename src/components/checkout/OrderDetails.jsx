@@ -27,7 +27,7 @@ function OrderDetails() {
         </Flex>
 
         <Flex w="100%" justify="space-between" mb="3">
-          <Text>Tarifa de entrega ($500MN):</Text>
+          <Text>Tarifa de entrega:</Text>
           <Text>$ {withDelivery ? shippingCost : "0"} CUP</Text>
         </Flex>
 

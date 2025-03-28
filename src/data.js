@@ -23,7 +23,7 @@ export default [
     price: 490,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/AZITROMICINA-500MG-CAJA-POR-3-TABLETAS-INCLINADO.jpg",
+    img: "Farmacia/Antimicrobianos/AZITROMICINA-500MG-CAJA-POR-3-TABLETAS-INCLINADO.jpg",
     category: "Farmacia",
   },
   {
@@ -32,7 +32,7 @@ export default [
     price: 350,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/amoxicilina.jpg",
+    img: "Farmacia/Antimicrobianos/amoxicilina.jpg",
     category: "Farmacia",
   },
   {
@@ -41,7 +41,7 @@ export default [
     price: 650,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/amoxicilina suspención.jpg",
+    img: "Farmacia/Antimicrobianos/amoxicilina suspención.jpg",
     category: "Farmacia",
   },
   {
@@ -50,7 +50,7 @@ export default [
     price: 350,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/CIPROFLOXACINO-500-MG.jpg",
+    img: "Farmacia/Antimicrobianos/CIPROFLOXACINO-500-MG.jpg",
     category: "Farmacia",
   },
   {
@@ -59,7 +59,7 @@ export default [
     price: 490,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/Cefalexina.jpg",
+    img: "Farmacia/Antimicrobianos/Cefalexina.jpg",
     category: "Farmacia",
   },
   {
@@ -68,7 +68,7 @@ export default [
     price: 750,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/cefalexina suspension.jpg",
+    img: "Farmacia/Antimicrobianos/cefalexina suspension.jpg",
     category: "Farmacia",
   },
   {
@@ -95,7 +95,7 @@ export default [
     price: 350,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/doxiciclina.jpg",
+    img: "Farmacia/Antimicrobianos/doxiciclina.jpg",
     category: "Farmacia",
   },
   {
@@ -104,7 +104,7 @@ export default [
     price: 300,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/Fluconazol.jpg",
+    img: "Farmacia/Antimicrobianos/Fluconazol.jpg",
     category: "Farmacia",
   },
   {
@@ -113,7 +113,7 @@ export default [
     price: 300,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/mebendazol.jpg",
+    img: "Farmacia/Antimicrobianos/mebendazol.jpg",
     category: "Farmacia",
   },
   {
@@ -122,7 +122,7 @@ export default [
     price: 300,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/METRONIDAZOL-500MG.jpg",
+    img: "Farmacia/Antimicrobianos/METRONIDAZOL-500MG.jpg",
     category: "Farmacia",
   },
   {
@@ -131,7 +131,7 @@ export default [
     price: 310,
     offerPrice: null,
     stock: 12,
-    img: "Farmacia F+/Antimicrobianos/sulfaprim.jpg",
+    img: "Farmacia/Antimicrobianos/sulfaprim.jpg",
     category: "Farmacia",
   },
   {

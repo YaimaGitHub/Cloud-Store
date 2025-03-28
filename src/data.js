@@ -14,7 +14,7 @@ export default [
     price: 330,
     offerPrice: null,
     stock: 12,
-    img: "albendazol.png",
+    img: "Farmacia/Antimicrobianos/albendazol.png",
     category: "Farmacia",
   },
   {

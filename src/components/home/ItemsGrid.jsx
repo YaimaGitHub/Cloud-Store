@@ -27,9 +27,9 @@ export default function ItemsGrid() {
       >
         <AlertIcon size="40px" mr={0} />
         <AlertTitle mt={4} mb={1} fontSize="lg">
-          An Error Ocurred!
+        ¡Se produjo un error!
         </AlertTitle>
-        <AlertDescription maxWidth="sm">Lorem ipsum dolor sit amet consectetur adipisicing elit</AlertDescription>
+        <AlertDescription maxWidth="sm">«Conexión perdida. Por favor, revise su conexión a Internet»</AlertDescription>
       </Alert>
     );
   }

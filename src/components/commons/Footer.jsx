@@ -7,7 +7,9 @@ function Footer() {
         <Text>2025 Todos los Derechos Reservados</Text>
 
         <Stack isInline>
-        <a href="https://www.instagram.com/" class="btn btn-sm btn-white btn-social mr-3">
+          
+        <a href="https://api.whatsapp.com/send?phone=55135487&text=Hola%20me gustaría%20%20hacer%20un%20*pedido*" class="link"><i class="fab fa-whatsapp"></i>
+        
             <Icon name="phone" mx="2" />
             <i class="fab fa-instagram"></i>
           </a>

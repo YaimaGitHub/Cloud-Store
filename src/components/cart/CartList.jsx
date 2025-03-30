@@ -11,7 +11,7 @@ function CartList() {
       <Alert status="info" variant="solid" flexDirection="column" justifyContent="center" textAlign="center" height="200px" mt="8">
         <AlertIcon size="40px" mr={0} />
         <AlertTitle mt={4} mb={1} fontSize="lg">
-        No posees productos en el carro de compras.
+        No posees productos en la cesta de compra.
         </AlertTitle>
         <AlertDescription maxWidth="sm">Adiciona los productos de tu lista de deseos o continúa revisando los productos disponibles en la tienda.</AlertDescription>
       </Alert>

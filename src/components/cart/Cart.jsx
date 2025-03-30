@@ -10,7 +10,7 @@ const Cart = ({ showCart = false, setCart }) => {
       <DrawerContent p="4">
         <Flex justify="space-between" align="center" w="100%">
           <Heading as="h2" size="xl">
-          Productos en el carro
+          Productos en la cesta de compra.
           </Heading>
           <DrawerCloseButton size="lg" position="static" />
         </Flex>

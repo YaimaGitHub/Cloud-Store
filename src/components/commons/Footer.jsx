@@ -4,7 +4,7 @@ function Footer() {
   return (
     <Box as="footer" w="100%" bg="bluex.500" color="white" position="relative" zIndex="1101">
       <Flex w="90%" mx="auto" justify="space-between" align="center" py="6">
-        <Text>2025 Todos los Derechos Reservados</Text>
+        <Text>© 2025 Todos los Derechos Reservados</Text>
 
         <Stack isInline>
           

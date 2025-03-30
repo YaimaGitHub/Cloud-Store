@@ -52,8 +52,8 @@ export const getFormValidations = () => {
         message: "Se requiere dirección",
       },
       maxLength: {
-        value: 20,
-        message: "Longitud máxima 20 caracteres",
+        value: 25,
+        message: "Longitud máxima 25 caracteres",
       },
       minLength: {
         value: 5,
@@ -107,9 +107,9 @@ export function getWspUrl(orderData) {
 
   const WSP_URL = `https://api.whatsapp.com/send/?phone=${N}&text=%2A${"Número de Orden"}%3A%2A%20${ID}%0A%0A%2A${"Cliente"}%3A%2A%20${name}%0A%0A%2A${"Teléfono"}%3A%2A%20${phone}%0A%0A%2A${
     withDelivery ? "Dirección" + "%3A%2A%20" + address + " %0A%0A%2A" : ""
-  }${withDelivery ? "Domicilio donde vive" + "%3A%2A%20" + city + "%0A%0A%2A" : ""}${
+  }${withDelivery ? "Zona de tu dirección" + "%3A%2A%20" + city + "%0A%0A%2A" : ""}${
     withDelivery ? "Hora Programada" + "%3A%2A%20" + schedule + "%0A%0A%2A" : ""
-  }${comment ? "Comentario Adicional" + "%3A%2A%20" + comment + "%0A%0A%2A" : ""}${"Lista de Artículos"}%3A%2A${cartListforUrl}%0A%0A%2A${
+  }${comment ? "Comentario Adicional" + "%3A%2A%20" + comment + "%0A%0A%2A" : ""}${"Lista de Productos"}%3A%2A${cartListforUrl}%0A%0A%2A${
     withDelivery ? "Sub Total" + "%3A%2A%20$" + subTotal + " %0A%0A%2A" : ""
   }${withDelivery ? "Tarifa de Entrega" + "%3A%2A%20$" + shippingCost + " %0A%0A%2A" : ""}${"Total"}%3A%2A%20${total}%0A%0A`;
 

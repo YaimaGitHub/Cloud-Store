@@ -18,7 +18,7 @@ export default function ItemCard({ item }) {
     if (counter === 1 && isAdded === "noAdded") {
       toast({
         position: "bottom-left",
-        title: "Artículo agregado al carrito.",
+        title: "Producto agregado a la cesta de compra.",
         status: "success",
         duration: 1500,
       });
@@ -26,7 +26,7 @@ export default function ItemCard({ item }) {
     } else if (counter === 0 && isAdded === "added") {
       toast({
         position: "bottom-left",
-        title: "Artículo eliminado del carrito.",
+        title: "Producto eliminado de la cesta de compra.",
         status: "error",
         duration: 1500,
       });

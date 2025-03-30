@@ -37,11 +37,11 @@ function CheckoutForm() {
     <>
       <Box w={["100%", "80%", "46%", "40%"]} height="max-content" bg="white" p="4" mx="2" order={["1", "1", "0"]} mt={["6", "6", "0"]}>
         <Heading as="h3" size="md" textAlign="center">
-          Tus Opciones
+        Tipo de Servicio
         </Heading>
         <Flex as="form" p="2" direction="column" onSubmit={handleSubmit(onSubmit)}>
           <Flex justify="center" align="center" mt="6">
-            <FormLabel htmlFor="delivery">¿Con entrega a Domicilio?</FormLabel>
+            <FormLabel htmlFor="delivery">¿Entrega a domicilio?</FormLabel>
             <Switch id="delivery" color="teal" defaultIsChecked onChange={() => setDelivery(!delivery)} />
           </Flex>
 
@@ -109,34 +109,40 @@ function CheckoutForm() {
                   isInvalid={errors.city ? true : false}
                 >
                   
-                  <option value="option1">Ferreiro</option> 
-                  <option value="option2">Santa Bárbara</option>
-                  <option value="option3">Terraza</option>
-                  <option value="option4">Vista Alegre</option>
-                  <option value="option4">Caney (centro)</option>
-                  <option value="option4">Santa Maria (hasta el mercado)</option>
-                  <option value="option4">Boniato (centro) </option>
-                  <option value="option4">Altamira</option>
-                  <option value="option4">Versalles</option>
-                  <option value="option4">Chicharrones</option>
-                  <option value="option4">Vista alegre</option>
-                  <option value="option4">Pastorita</option>
-                  <option value="option4">Distrito Jose Marti (hasta micro 9)</option>
-                  <option value="option4">Los cangrejitos</option>
-                  <option value="option4">Vista hermosa</option>
-                  <option value="option4">Portuondo</option>
-                  <option value="option4">Sorribe</option>
-                  <option value="option4">Los olmos</option>
-                  <option value="option4">Los pinos</option>
-                  <option value="option4">Veguita de Galo</option>
-                  <option value="option4">Alameda</option>
-                  <option value="option4">Quintero</option>
-                  <option value="option4">Nuevo vista alegre</option>
-                  <option value="option4">Modelo</option>
-                  <option value="option4">Martí (hasta la iglesia)</option>
-                  <option value="option4">Martí(despues de la iglesia)</option>
-                  <option value="option4">30 de Noviembre</option>
-                  <option value="option4">30 de Noviembre (SASA)</option>
+                  <option value="Ferreiro">Ferreiro</option> 
+                  <option value="Santa Bárbara">Santa Bárbara</option>
+                  <option value="Terraza">Terraza</option>
+                  <option value="Vista Alegre">Vista Alegre</option>
+                  <option value="Caney (centro)">Caney (centro)</option>
+                  <option value="Santa Maria (hasta el mercado)">Santa Maria (hasta el mercado)</option>
+                  <option value="Boniato (centro)">Boniato (centro)</option>
+                  <option value="Altamira">Altamira</option>
+                  <option value="Versalles">Versalles</option>
+                  <option value="Chicharrones">Chicharrones</option>
+                  <option value="Vista alegre">Vista alegre</option>
+                  <option value="Pastorita">Pastorita</option>
+                  <option value="Distrito Jose Marti (hasta micro 9)">Distrito Jose Marti (hasta micro 9)</option>
+                  <option value="Los cangrejitos">Los cangrejitos</option>
+                  <option value="Vista hermosa">Vista hermosa</option>
+                  <option value="Portuondo">Portuondo</option>
+                  <option value="Sorribe">Sorribe</option>
+                  <option value="Los olmos">Los olmos</option>
+                  <option value="Los pinos">Los pinos</option>
+                  <option value="Veguita de Galo">Veguita de Galo</option>
+                  <option value="Alameda">Alameda</option>
+                  <option value="Quintero">Quintero</option>
+                  <option value="Nuevo vista alegre">Nuevo vista alegre</option>
+                  <option value="Modelo">Modelo</option>
+                  <option value="Martí (hasta la iglesia)">Martí (hasta la iglesia)</option>
+                  <option value="Calle 4">Calle 4</option>
+                  <option value="30 de Noviembre">30 de Noviembre</option>
+                  <option value="Micro 7">Micro 7</option>
+                  <option value="Micro 8">Micro 8</option>
+                  <option value="Carretera del morro">Carretera del morro</option>
+                  <option value="Rajayoja">Rajayoja</option>
+                  <option value="San Pedrito">San Pedrito</option>
+                  <option value="Marialina">Marialina</option>
+                  <option value="Antonio maceo">Antonio maceo</option>
                  
                  
                 </Select>
@@ -176,7 +182,7 @@ function CheckoutForm() {
             <Input
               type="text"
               name="comment"
-              placeholder="Información adicional sobre su pedido o dirección"
+              placeholder="¿Quieres aclararnos algo?"
               variant="filled"
               ref={register(validations.comment)}
               isInvalid={errors.comment ? true : false}

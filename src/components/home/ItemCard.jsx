@@ -59,7 +59,7 @@ export default function ItemCard({ item }) {
         )}
 
         <Box w="100%" h="50%" onClick={() => setModal(true)}>
-          <Image size="100%" objectFit="cover" src={`/images/${img}`} fallbackSrc="/images/fallbackImg.png" alt="" />
+          <Image size="100%" objectFit="cover" src={`/images/${img}`} fallbackSrc="/images/productosinimagen.jpg" alt="" />
         </Box>
 
         <Box w="85%" my="3">

@@ -13,7 +13,7 @@ function CartFooter() {
         Sub Total: ${subTotal.toFixed(2)} CUP
       </Text>
       <Button onClick={() => router.push("/checkout")} w="100%" variantColor="bluex" size="lg" disabled={!subTotal}>
-      Verificar la Orden de Compra
+      Verificar la orden de compra
       </Button>
     </Box>
   );

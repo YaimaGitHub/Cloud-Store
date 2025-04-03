@@ -11,7 +11,7 @@ export default function CartItem({ item }) {
   return (
     <Flex w="100%" justify="flex-start" align="center" position="relative" borderTop="1px solid black" py="2">
       <Box w="100px" h="100px" mr="2">
-        <Image size="100%" objectFit="cover" src={`/images/${img}`} fallbackSrc="/images/fallbackImg.png" alt="" />
+        <Image size="100%" objectFit="cover" src={`/images/${img}`} fallbackSrc="/images/productosinimagen.jpg" alt="" />
       </Box>
 
       <Box w="80%">

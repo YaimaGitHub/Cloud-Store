@@ -6,7 +6,7 @@ export default function ItemModal({ showModal, setModal, img }) {
       <ModalOverlay />
       <ModalContent>
         <ModalCloseButton />
-        <Image size="100%" objectFit="cover" src={`/images/${img}`} fallbackSrc="/images/fallbackImg.png" alt="" />
+        <Image size="100%" objectFit="cover" src={`/images/${img}`} fallbackSrc="/images/productosinimagen.jpg" alt="" />
       </ModalContent>
     </Modal>
   );

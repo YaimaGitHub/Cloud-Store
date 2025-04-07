@@ -5,7 +5,7 @@ import CounterBtn from "../others/CounterBtn";
 import ItemModal from "../others/ItemModal";
 
 export default function ItemCard({ item }) {
-  const { title, price, img, offerPrice } = item;
+  const { title, title1, price, img, offerPrice } = item;
 
   //HOOKS
   const [showModal, setModal] = useState(false);
@@ -74,9 +74,11 @@ export default function ItemCard({ item }) {
             )}
           </Flex>
 
-          <Text fontSize="sm" textTransform="capitalize" minHeight="42px">
-            {title}
+          <Text fontSize="sm" textTransform="capitalize" minHeight="20px">
+            {title}            
           </Text>
+          {title1}         
+
         </Box>
 
         <CounterBtn item={item} counter={counter} />

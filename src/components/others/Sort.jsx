@@ -12,7 +12,7 @@ export default function Sort() {
         {sort}
       </MenuButton>
       <MenuList w="80px" placement="bottom-end">
-        <MenuOptionGroup defaultValue="asc" value={sort} title="Orden:" type="radio" onChange={(val) => setSort(val)}>
+        <MenuOptionGroup defaultValue="asc" value={sort} title="Orden:" title1="Orden:" type="radio" onChange={(val) => setSort(val)}>
           {options.map((option) => (
             <MenuItemOption value={option} key={option}>
               {option}

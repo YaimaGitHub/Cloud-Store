@@ -99,7 +99,7 @@ export default [
     category: "Farmacia",
   },
   {
-    id: "7",
+    id: "789",
     title: "Diclofenaco + Paracetamol",
     price: 300,
     offerPrice: null,
@@ -126,7 +126,7 @@ export default [
     category: "Farmacia",
   },
   {
-    id: "000",
+    id: "000222",
     title: "Mebendazol",
     price: 300,
     offerPrice: null,
@@ -135,7 +135,7 @@ export default [
     category: "Farmacia",
   },
   {
-    id: "66",
+    id: "6698",
     title: "Metronidazol 500mg",
     price: 300,
     offerPrice: null,
@@ -153,7 +153,7 @@ export default [
     category: "Farmacia",
   },
   {
-    id: "8",
+    id: "87665",
     title: "Sulfaprim",
     price: 310,
     offerPrice: null,
@@ -479,10 +479,11 @@ export default [
   {
     id: "coffe444",
     title: "Zapato de mujer (Fashion)",
-    price: 3500,
+    title1: "Talla: 40",
+    price: 3.4,
     offerPrice: null,
     stock: 12,
     img: "Ropa_calzado_accesorios/zapatos/Zapato de mujer (Fashion).jpg",
-    category: "Ropa",
+    category: "Ropa_calzado_accesorios",
   },
 ];

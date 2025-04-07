@@ -1,7 +1,7 @@
 import { Flex, Text } from "@chakra-ui/core";
 
 export default function OrderItem({ item }) {
-  const { qty, title, price, offerPrice } = item;
+  const { qty, title, title1, price, offerPrice } = item;
 
   const itemTotal = (offerPrice ? offerPrice * qty : price * qty).toFixed(2);
 

@@ -101,7 +101,7 @@ export function getWspUrl(orderData) {
   {
     Object.values(cartItems).forEach((item) => {
       const itemTotal = (item.offerPrice ? item.offerPrice * item.qty : item.price * item.qty).toFixed(2);
-      cartListforUrl += `%0A%0A - *(${item.qty})* ${item.title} --> _*$${itemTotal}*_`;
+      cartListforUrl += `%0A%0A - *(${item.qty})* ${item.title} ${item.title1} --> _*$${itemTotal}*_`;
     });
   }
 

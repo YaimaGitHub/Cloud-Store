@@ -160,7 +160,7 @@ function CheckoutForm() {
                   ref={register(validations.schedule)}
                   isInvalid={errors.schedule ? true : false}
                 >
-                  <option value="option1">8:00AM a 5:00PM</option>
+                  <option value="8:00AM a 5:00PM">8:00AM a 5:00PM</option>
             
                 </Select>
               </InputGroup>

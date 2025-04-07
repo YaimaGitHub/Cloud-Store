@@ -4,7 +4,7 @@ import { refreshCart } from "../../recoil/state";
 import CounterBtn from "../others/CounterBtn";
 
 export default function CartItem({ item }) {
-  const { title, price, offerPrice, img, qty } = item;
+  const { title, title1, price, offerPrice, img, qty } = item;
   const setCart = useSetRecoilState(refreshCart);
 
   const itemTotal = (offerPrice ? offerPrice * qty : price * qty).toFixed(2);

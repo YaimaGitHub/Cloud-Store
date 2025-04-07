@@ -37,7 +37,7 @@ export default function Sidebar({ showSidebar, setSidebar }) {
         <CustomRadio value="meat" title="Carnes" icon={<Box as={BiMinus} size="24px" mr="10" />} />
         <CustomRadio value="bakery" title="Panadería y  Dulcería" icon={<Box as={BiMinus} size="24px" mr="10" />} />
         <CustomRadio value="drink" title="Bebidas" icon={<Box as={BiMinus} size="24px" mr="10" />} />
-        <CustomRadio value="Ropa" title="Ropa, calzado y accesorios" icon={<Box as={BiMinus} size="24px" mr="10" />} />
+        <CustomRadio value="Ropa_calzado_accesorios" title="Ropa, calzado y accesorios" icon={<Box as={BiMinus} size="24px" mr="10" />} />
       </RadioButtonGroup>
     </Box>
   );

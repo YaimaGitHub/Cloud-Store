@@ -132,6 +132,7 @@ function CheckoutForm() {
                   <option value="Alameda">Alameda</option>
                   <option value="Quintero">Quintero</option>
                   <option value="Nuevo vista alegre">Nuevo vista alegre</option>
+                  <option value="Agüero">Agüero</option>
                   <option value="Modelo">Modelo</option>
                   <option value="Martí (hasta la iglesia)">Martí (hasta la iglesia)</option>
                   <option value="Calle 4">Calle 4</option>

@@ -475,4 +475,44 @@ export default [
     img: "coffe4.jpg",
     category: "drink",
   },
+
+  {
+    id: "Ropa, calzado y accesorios",
+    title: "mariela zapatos",
+    price: 1.5,
+    offerPrice: null,
+    stock: 12,
+    img: "coffe.jpg",
+    category: "Ropa, calzado y accesorios",
+  },
+
+  {
+    id: "Ropa, calzado y accesorios",
+    title: "Caffee Nero Mocha Late",
+    price: 1.8,
+    offerPrice: null,
+    stock: 12,
+    img: "coffe2.jpg",
+    category: "drink",
+  },
+
+  {
+    id: "Ropa, calzado y accesorios",
+    title: "Nescafe Clasico Instant Coffee",
+    price: 2.2,
+    offerPrice: null,
+    stock: 12,
+    img: "coffe3.jpg",
+    category: "drink",
+  },
+
+  {
+    id: "Ropa, calzado y accesorios",
+    title: "Peet Coffee Decaf Major Dickason Blend",
+    price: 2.4,
+    offerPrice: 2.1,
+    stock: 12,
+    img: "coffe4.jpg",
+    category: "drink",
+  },
 ];

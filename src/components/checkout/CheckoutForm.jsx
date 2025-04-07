@@ -111,11 +111,7 @@ function CheckoutForm() {
                   
                   <option value="Ferreiro">Ferreiro</option> 
                   <option value="Santa Bárbara">Santa Bárbara</option>
-                  <option value="Terraza">Terraza</option>
                   <option value="Vista Alegre">Vista Alegre</option>
-                  <option value="Caney (centro)">Caney (centro)</option>
-                  <option value="Santa Maria (hasta el mercado)">Santa Maria (hasta el mercado)</option>
-                  <option value="Boniato (centro)">Boniato (centro)</option>
                   <option value="Altamira">Altamira</option>
                   <option value="Versalles">Versalles</option>
                   <option value="Chicharrones">Chicharrones</option>
@@ -158,16 +154,14 @@ function CheckoutForm() {
                 <InputLeftElement children={<PseudoBox as={BiTime} size="24px" color="bluex.400" />} />
                 <Select
                   variant="filled"
-                  placeholder="-- Elija un horario --"
+                  placeholder="-- Elija el horario para el domicilio --"
                   pl="40px"
                   name="schedule"
                   ref={register(validations.schedule)}
                   isInvalid={errors.schedule ? true : false}
                 >
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
-                  <option value="option4">Option 4</option>
+                  <option value="option1">8:00AM a 5:00PM</option>
+            
                 </Select>
               </InputGroup>
               {errors.schedule && (

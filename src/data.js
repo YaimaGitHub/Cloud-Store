@@ -478,11 +478,11 @@ export default [
 
   {
     id: "Ropa, calzado y accesorios",
-    title: "mariela zapatos",
-    price: 1.5,
+    title: "Zapato de mujer (Fashion) #42",
+    price: 3500,
     offerPrice: null,
     stock: 12,
-    img: "coffe.jpg",
+    img: "Ropa_calzado_accesorios/IMG-20250406-WA0032.jpg",
     category: "Ropa, calzado y accesorios",
   },
 

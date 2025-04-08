@@ -480,7 +480,7 @@ export default [
     id: "coffe444",
     title: "Zapato de mujer (Fashion)",
     title1: "Talla: 40",
-    price: 3.4,
+    price: 3500,
     offerPrice: null,
     stock: 12,
     img: "Ropa_calzado_accesorios/zapatos/Zapato de mujer (Fashion).jpg",

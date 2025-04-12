@@ -1,15 +1,18 @@
-import { Badge, Box, Flex, PseudoBox, Text } from "@chakra-ui/core";
-import { useState } from "react";
-import { BiMenuAltLeft, BiSearch, BiShoppingBag, BiStoreAlt } from "react-icons/bi";
-import SearchBar from "../others/SearchBar";
-import Link from "next/link";
-import { useRecoilValue } from "recoil";
-import { cartLength } from "../../recoil/state";
-import Logo from "../others/Logo";
+"use client"
+
+import { Badge, Box, Flex, PseudoBox } from "@chakra-ui/core"
+import { useState } from "react"
+import { BiMenuAltLeft, BiSearch, BiShoppingBag, BiStoreAlt } from "react-icons/bi"
+import SearchBar from "../others/SearchBar"
+import Link from "next/link"
+import { useRecoilValue } from "recoil"
+import { cartLength } from "../../recoil/state"
+import Logo from "../others/Logo"
+import CurrencySelector from "./CurrencySelector"
 
 export default function Header({ page = "", showSidebar = false, setSidebar = false, setCart = () => {} }) {
-  const [showSearch, setShowSearch] = useState(false);
-  const itemsCount = useRecoilValue(cartLength);
+  const [showSearch, setShowSearch] = useState(false)
+  const itemsCount = useRecoilValue(cartLength)
 
   return (
     <>
@@ -21,47 +24,51 @@ export default function Header({ page = "", showSidebar = false, setSidebar = fa
                 <Box as={BiMenuAltLeft} size="38px" mr="2" />
               </button>
             )}
-            <Logo />
+            <Logo width={150} />
           </Flex>
 
-          <div>
-            {page === "home" && (
-              <PseudoBox as="button" mr="10" onClick={() => setShowSearch(!showSearch)}>
-                <Box as={BiSearch} size="38px" />
-              </PseudoBox>
-            )}
+          <Flex align="center">
+            <CurrencySelector />
 
-            {page === "home" ? (
-              <PseudoBox as="button" position="relative" onClick={() => setCart(true)}>
-                <Box as={BiShoppingBag} size="38px" />
-                <Badge
-                  color="white"
-                  bg="bluex.600"
-                  borderRadius="999px"
-                  w="6"
-                  h="6"
-                  display="flex"
-                  justifyContent="center"
-                  alignItems="center"
-                  position="absolute"
-                  top="-12px"
-                  left="-12px"
-                >
-                  {itemsCount}
-                </Badge>
-              </PseudoBox>
-            ) : (
-              <Link href="/">
-                <PseudoBox as="button">
-                  <Box as={BiStoreAlt} size="38px" />
+            <Box ml={4}>
+              {page === "home" && (
+                <PseudoBox as="button" mr="10" onClick={() => setShowSearch(!showSearch)}>
+                  <Box as={BiSearch} size="38px" />
                 </PseudoBox>
-              </Link>
-            )}
-          </div>
+              )}
+
+              {page === "home" ? (
+                <PseudoBox as="button" position="relative" onClick={() => setCart(true)}>
+                  <Box as={BiShoppingBag} size="38px" />
+                  <Badge
+                    color="white"
+                    bg="bluex.600"
+                    borderRadius="999px"
+                    w="6"
+                    h="6"
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    position="absolute"
+                    top="-12px"
+                    left="-12px"
+                  >
+                    {itemsCount}
+                  </Badge>
+                </PseudoBox>
+              ) : (
+                <Link href="/">
+                  <PseudoBox as="button">
+                    <Box as={BiStoreAlt} size="38px" />
+                  </PseudoBox>
+                </Link>
+              )}
+            </Box>
+          </Flex>
         </Flex>
       </Box>
 
       {showSearch && <SearchBar setShowSearch={setShowSearch} />}
     </>
-  );
+  )
 }

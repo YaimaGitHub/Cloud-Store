@@ -1,47 +1,47 @@
-import data from "../../data";
+import data from "../../data"
 
 const handleSort = (items, sortMode) => {
   switch (sortMode) {
     case "Ascendente":
-      return items.sort((a, b) => a.title - b.title);
+      return items.sort((a, b) => a.title - b.title)
     case "Descendente":
-      return items.sort((a, b) => b.title - a.title);
+      return items.sort((a, b) => b.title - a.title)
     case "Precio mínimo":
-      return items.sort((a, b) => a.price - b.price);
+      return items.sort((a, b) => a.price - b.price)
     case "Precio máximo":
-      return items.sort((a, b) => b.price - a.price);
+      return items.sort((a, b) => b.price - a.price)
     default:
-      return items;
+      return items
   }
-};
+}
 
 export default async (req, res) => {
-  const cat = req.query.category;
-  const sort = req.query.sort;
-  const search = req.query.search;
+  const cat = req.query.category
+  const sort = req.query.sort
+  const search = req.query.search
 
   //use settimeout for apreciate card loaders
   setTimeout(() => {
-    if (!cat || !sort) return res.json(data);
+    if (!cat || !sort) return res.json(data)
 
-    let items;
+    let items
 
     if (cat !== "all") {
-      items = data.filter((i) => i.category === cat);
+      items = data.filter((i) => i.category === cat)
     } else {
-      items = data;
+      items = data
     }
 
     if (typeof search === "string") {
-      const searchQuery = search.toLocaleLowerCase();
+      const searchQuery = search.toLocaleLowerCase()
       items = items.filter((i) => {
-        const title = i.title.toLocaleLowerCase();
-        return title.includes(searchQuery);
-      });
+        const title = i.title.toLocaleLowerCase()
+        return title.includes(searchQuery)
+      })
     }
 
-    const sortedtItems = handleSort(items, sort);
+    const sortedtItems = handleSort(items, sort)
 
-    return res.json(sortedtItems);
-  }, 800);
-};
+    return res.json(sortedtItems)
+  }, 800)
+}

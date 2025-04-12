@@ -1,8 +1,8 @@
-import { Button, Flex } from "@chakra-ui/core";
-import React from "react";
+import { Button, Flex } from "@chakra-ui/core"
+import React from "react"
 
 const CustomRadio = React.forwardRef((props, ref) => {
-  const { title = "category", icon = "", isChecked, isDisabled, value, ...rest } = props;
+  const { title = "category", icon = "", isChecked, isDisabled, value, ...rest } = props
 
   return (
     <Button
@@ -24,7 +24,7 @@ const CustomRadio = React.forwardRef((props, ref) => {
         {title}
       </Flex>
     </Button>
-  );
-});
+  )
+})
 
-export default CustomRadio;
+export default CustomRadio

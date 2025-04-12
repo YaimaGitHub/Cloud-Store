@@ -1,33 +1,35 @@
-import { Box, CloseButton, Flex, Input, InputGroup, InputLeftElement } from "@chakra-ui/core";
-import { useState } from "react";
-import { BiSearch } from "react-icons/bi";
-import { useRecoilState } from "recoil";
-import { searchValue } from "../../recoil/state";
+"use client"
+
+import { Box, CloseButton, Flex, Input, InputGroup, InputLeftElement } from "@chakra-ui/core"
+import { useState } from "react"
+import { BiSearch } from "react-icons/bi"
+import { useRecoilState } from "recoil"
+import { searchValue } from "../../recoil/state"
 
 export default function SearchBar({ setShowSearch }) {
-  const [search, setValue] = useState("");
-  const [searchQuery, setSearchQuery] = useRecoilState(searchValue);
+  const [search, setValue] = useState("")
+  const [searchQuery, setSearchQuery] = useRecoilState(searchValue)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setSearchQuery(search);
-  };
+    e.preventDefault()
+    setSearchQuery(search)
+  }
 
   const handleChange = (e) => {
     if (e.target.value === "") {
       setTimeout(() => {
         //avoid freezing in UI when typing
-        setSearchQuery("");
-      }, 0);
+        setSearchQuery("")
+      }, 0)
     } else {
-      setValue(e.target.value);
+      setValue(e.target.value)
     }
-  };
+  }
 
   const handleClose = (e) => {
-    setSearchQuery("");
-    setShowSearch(false);
-  };
+    setSearchQuery("")
+    setShowSearch(false)
+  }
 
   return (
     <Box w="100%" bg="white" py="6" shadow="md" h="100px" position="fixed" top="0" left="0" zIndex="1102">
@@ -42,7 +44,13 @@ export default function SearchBar({ setShowSearch }) {
           rounded="lg"
           border="2px solid black"
         >
-          <Input pl="4rem" type="search" placeholder="Buscar en la tienda ..." onChange={handleChange} defaultValue={searchQuery} />
+          <Input
+            pl="4rem"
+            type="search"
+            placeholder="Buscar en la tienda ..."
+            onChange={handleChange}
+            defaultValue={searchQuery}
+          />
           <InputLeftElement w="4rem">
             <button>
               <Box as={BiSearch} size="28px" />
@@ -52,5 +60,5 @@ export default function SearchBar({ setShowSearch }) {
         <CloseButton size="lg" onClick={handleClose} />
       </Flex>
     </Box>
-  );
+  )
 }

@@ -1,8 +1,9 @@
-import { Box, Flex } from "@chakra-ui/core";
-import Banner from "./Banner";
-import ItemsGrid from "./ItemsGrid";
-import OBreadcrumb from "../others/OBreadcrumb";
-import Sort from "../others/Sort";
+import { Box, Flex } from "@chakra-ui/core"
+import Banner from "./Banner"
+import ItemsGrid from "./ItemsGrid"
+import OBreadcrumb from "../others/OBreadcrumb"
+import Sort from "../others/Sort"
+import FilterPanel from "../others/FilterPanel"
 
 function MainContainer({ showSidebar }) {
   return (
@@ -18,14 +19,24 @@ function MainContainer({ showSidebar }) {
     >
       <Banner />
 
-      <Flex justify="space-between" align="center" w="100%" mt="8">
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        justify="space-between"
+        align={{ base: "flex-start", md: "center" }}
+        w="100%"
+        mt="8"
+        gap={4}
+      >
         <OBreadcrumb />
-        <Sort />
+        <Flex gap={4} align="center" w={{ base: "100%", md: "auto" }}>
+          <FilterPanel />
+          <Sort />
+        </Flex>
       </Flex>
 
       <ItemsGrid />
     </Box>
-  );
+  )
 }
 
-export default MainContainer;
+export default MainContainer

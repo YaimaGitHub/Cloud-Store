@@ -1,5 +1,5 @@
-import { Box, Grid } from "@chakra-ui/core";
-import Skeleton from "react-loading-skeleton";
+import { Box, Grid } from "@chakra-ui/core"
+import Skeleton from "react-loading-skeleton"
 
 const SkeletonCard = () => (
   <Box w="100%" h="300px" bg="white" p="8">
@@ -12,18 +12,18 @@ const SkeletonCard = () => (
       <Skeleton count={1} width={"70%"} height={40} />
     </Box>
   </Box>
-);
+)
 
 export default function SkeletonGrid() {
-  const cards = [];
+  const cards = []
 
   for (let i = 0; i <= 16; i++) {
-    cards.push(<SkeletonCard key={i} />);
+    cards.push(<SkeletonCard key={i} />)
   }
 
   return (
     <Grid templateColumns="repeat(auto-fill,minmax(220px,1fr))" gap={6} mt="8">
       {cards}
     </Grid>
-  );
+  )
 }

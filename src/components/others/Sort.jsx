@@ -1,10 +1,12 @@
-import { Button, Menu, MenuButton, MenuItemOption, MenuList, MenuOptionGroup } from "@chakra-ui/core";
-import { useRecoilState, useRecoilValue } from "recoil";
-import { orderOptions, sortMode } from "../../recoil/state";
+"use client"
+
+import { Button, Menu, MenuButton, MenuItemOption, MenuList, MenuOptionGroup } from "@chakra-ui/core"
+import { useRecoilState, useRecoilValue } from "recoil"
+import { orderOptions, sortMode } from "../../recoil/state"
 
 export default function Sort() {
-  const [sort, setSort] = useRecoilState(sortMode);
-  const options = useRecoilValue(orderOptions);
+  const [sort, setSort] = useRecoilState(sortMode)
+  const options = useRecoilValue(orderOptions)
 
   return (
     <Menu closeOnSelect={true}>
@@ -12,7 +14,14 @@ export default function Sort() {
         {sort}
       </MenuButton>
       <MenuList w="80px" placement="bottom-end">
-        <MenuOptionGroup defaultValue="asc" value={sort} title="Orden:" title1="Orden:" type="radio" onChange={(val) => setSort(val)}>
+        <MenuOptionGroup
+          defaultValue="asc"
+          value={sort}
+          title="Orden:"
+          title1="Orden:"
+          type="radio"
+          onChange={(val) => setSort(val)}
+        >
           {options.map((option) => (
             <MenuItemOption value={option} key={option}>
               {option}
@@ -21,5 +30,5 @@ export default function Sort() {
         </MenuOptionGroup>
       </MenuList>
     </Menu>
-  );
+  )
 }

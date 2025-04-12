@@ -1,20 +1,22 @@
-import { Box } from "@chakra-ui/core";
-import Header from "../components/commons/Header";
-import Sidebar from "../components/commons/Sidebar";
-import Cart from "../components/cart/Cart";
-import MainContainer from "../components/home/MainContainer";
-import Footer from "../components/commons/Footer";
-import { useEffect, useState } from "react";
-import useIsDesktop from "../hooks/useIsDesktop";
+"use client"
+
+import { Box } from "@chakra-ui/core"
+import Header from "../components/commons/Header"
+import Sidebar from "../components/commons/Sidebar"
+import Cart from "../components/cart/Cart"
+import MainContainer from "../components/home/MainContainer"
+import Footer from "../components/commons/Footer"
+import { useEffect, useState } from "react"
+import useIsDesktop from "../hooks/useIsDesktop"
 
 const Index = () => {
-  const isDesktop = useIsDesktop();
-  const [showSidebar, setSidebar] = useState(false);
-  const [showCart, setCart] = useState(false);
+  const isDesktop = useIsDesktop()
+  const [showSidebar, setSidebar] = useState(false)
+  const [showCart, setCart] = useState(false)
 
   useEffect(() => {
-    setSidebar(isDesktop);
-  }, [isDesktop]);
+    setSidebar(isDesktop)
+  }, [isDesktop])
 
   return (
     <>
@@ -29,7 +31,7 @@ const Index = () => {
       <Cart showCart={showCart} setCart={setCart} />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index

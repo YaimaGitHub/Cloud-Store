@@ -1,9 +1,11 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, Icon } from "@chakra-ui/core";
-import { useRecoilState } from "recoil";
-import { selectedCategory } from "../../recoil/state";
+"use client"
+
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, Icon } from "@chakra-ui/core"
+import { useRecoilState } from "recoil"
+import { selectedCategory } from "../../recoil/state"
 
 export default function OBreadcrumb() {
-  const [catSelected, setCat] = useRecoilState(selectedCategory);
+  const [catSelected, setCat] = useRecoilState(selectedCategory)
   return (
     <Breadcrumb
       spacing="6px"
@@ -21,5 +23,5 @@ export default function OBreadcrumb() {
         </BreadcrumbItem>
       ) : null}
     </Breadcrumb>
-  );
+  )
 }

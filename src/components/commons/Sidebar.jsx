@@ -1,21 +1,23 @@
-import { Box, RadioButtonGroup } from "@chakra-ui/core";
-import { BiMinus } from "react-icons/bi";
-import CustomRadio from "../others/CustomRadio";
-import { useRecoilState } from "recoil";
-import { selectedCategory } from "../../recoil/state";
-import { useEffect } from "react";
-import useIsDesktop from "../../hooks/useIsDesktop";
+"use client"
+
+import { Box, RadioButtonGroup } from "@chakra-ui/core"
+import { BiMinus } from "react-icons/bi"
+import CustomRadio from "../others/CustomRadio"
+import { useRecoilState } from "recoil"
+import { selectedCategory } from "../../recoil/state"
+import { useEffect } from "react"
+import useIsDesktop from "../../hooks/useIsDesktop"
 
 export default function Sidebar({ showSidebar, setSidebar }) {
-  const [category, setCategory] = useRecoilState(selectedCategory);
-  const isDesktop = useIsDesktop();
+  const [category, setCategory] = useRecoilState(selectedCategory)
+  const isDesktop = useIsDesktop()
 
   //close sidebar on select when is mobile
   useEffect(() => {
     if (!isDesktop) {
-      setSidebar(false);
+      setSidebar(false)
     }
-  }, [category]);
+  }, [category])
 
   return (
     <Box
@@ -32,13 +34,21 @@ export default function Sidebar({ showSidebar, setSidebar }) {
     >
       <RadioButtonGroup defaultValue="all" value={category} onChange={(val) => setCategory(val)} isInline>
         <CustomRadio value="all" title="Todos los Productos" icon={<Box as={BiMinus} size="24px" mr="10" />} />
-        <CustomRadio value="Electrodomésticos" title="Electrodomésticos" icon={<Box as={BiMinus} size="24px" mr="10" />} />
+        <CustomRadio
+          value="Electrodomésticos"
+          title="Electrodomésticos"
+          icon={<Box as={BiMinus} size="24px" mr="10" />}
+        />
         <CustomRadio value="Farmacia" title="Farmacia F+" icon={<Box as={BiMinus} size="24px" mr="10" />} />
         <CustomRadio value="meat" title="Carnes" icon={<Box as={BiMinus} size="24px" mr="10" />} />
         <CustomRadio value="bakery" title="Panadería y  Dulcería" icon={<Box as={BiMinus} size="24px" mr="10" />} />
         <CustomRadio value="drink" title="Bebidas" icon={<Box as={BiMinus} size="24px" mr="10" />} />
-        <CustomRadio value="Ropa_calzado_accesorios" title="Ropa, calzado y accesorios" icon={<Box as={BiMinus} size="24px" mr="10" />} />
+        <CustomRadio
+          value="Ropa_calzado_accesorios"
+          title="Ropa, calzado y accesorios"
+          icon={<Box as={BiMinus} size="24px" mr="10" />}
+        />
       </RadioButtonGroup>
     </Box>
-  );
+  )
 }

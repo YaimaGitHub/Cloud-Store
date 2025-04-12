@@ -486,4 +486,4 @@ export default [
     img: "Ropa_calzado_accesorios/zapatos/Zapato de mujer (Fashion).jpg",
     category: "Ropa_calzado_accesorios",
   },
-];
+]

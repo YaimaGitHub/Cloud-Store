@@ -1,3 +1,5 @@
+"use client"
+
 import {
   AlertDialog,
   AlertDialogBody,
@@ -7,25 +9,25 @@ import {
   AlertDialogHeader,
   AlertDialogOverlay,
   Button,
-} from "@chakra-ui/core";
-import { useRecoilValue, useSetRecoilState } from "recoil";
-import { getWspUrl } from "../../helpers";
-import { orderDetails, resetState } from "../../recoil/state";
+} from "@chakra-ui/core"
+import { useRecoilValue, useSetRecoilState } from "recoil"
+import { getWspUrl } from "../../helpers"
+import { orderDetails, resetState } from "../../recoil/state"
 
 function ConfirmAlertModal({ showModal, setModal }) {
-  const orderData = useRecoilValue(orderDetails);
-  const reset = useSetRecoilState(resetState);
+  const orderData = useRecoilValue(orderDetails)
+  const reset = useSetRecoilState(resetState)
 
   const onClose = () => {
-    setModal(false);
-  };
+    setModal(false)
+  }
 
   const onConfirm = () => {
-    const WSP_URL = getWspUrl(orderData);
-    window.open(WSP_URL, "_blank");
-    setModal(false);
-    reset();
-  };
+    const WSP_URL = getWspUrl(orderData)
+    window.open(WSP_URL, "_blank")
+    setModal(false)
+    reset()
+  }
 
   return (
     <>
@@ -34,16 +36,21 @@ function ConfirmAlertModal({ showModal, setModal }) {
         <AlertDialogContent>
           <AlertDialogHeader>¿Confirmar Pedido?</AlertDialogHeader>
           <AlertDialogCloseButton />
-          <AlertDialogBody>Serás redirigido a una pestaña de WhatsApp para enviar un mensaje con los detalles del pedido.</AlertDialogBody>
+          <AlertDialogBody>
+            Serás redirigido a una pestaña de WhatsApp para enviar un mensaje con los detalles del pedido.
+          </AlertDialogBody>
           <AlertDialogFooter>
-            <Button variantColor="teal" ml={3} onClick={onConfirm}>
-              Si
+            <Button variant="outline" mr={3} onClick={onClose}>
+              Cancelar
+            </Button>
+            <Button variantColor="teal" onClick={onConfirm}>
+              Confirmar y Enviar
             </Button>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
     </>
-  );
+  )
 }
 
-export default ConfirmAlertModal;
+export default ConfirmAlertModal

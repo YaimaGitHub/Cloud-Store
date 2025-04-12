@@ -1,8 +1,8 @@
-import { theme as chakraTheme } from "@chakra-ui/core";
+import { theme as chakraTheme } from "@chakra-ui/core"
 
-const fonts = { ...chakraTheme.fonts, mono: `'Menlo', monospace` };
+const fonts = { ...chakraTheme.fonts, mono: `'Menlo', monospace` }
 
-const breakpoints = ["30em", "48em", "62em", "80em"];
+const breakpoints = ["30em", "48em", "62em", "80em"]
 
 const theme = {
   ...chakraTheme,
@@ -48,6 +48,6 @@ const theme = {
     ...chakraTheme.shadows,
     outline: "none",
   },
-};
+}
 
-export default theme;
+export default theme

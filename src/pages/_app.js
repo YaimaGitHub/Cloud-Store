@@ -1,7 +1,7 @@
-import { ThemeProvider, CSSReset } from "@chakra-ui/core";
-import Head from "next/head";
-import { RecoilRoot } from "recoil";
-import theme from "../theme";
+import { ThemeProvider, CSSReset } from "@chakra-ui/core"
+import Head from "next/head"
+import { RecoilRoot } from "recoil"
+import theme from "../theme"
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         </ThemeProvider>
       </RecoilRoot>
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
